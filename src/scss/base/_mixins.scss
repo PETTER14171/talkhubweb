@@ -1,0 +1,30 @@
+@use 'sass:color';
+@use '../base/variables' as var;
+
+@mixin container { 
+    width: min(100% - 2rem, var.$container); 
+    margin-inline: auto; 
+}
+
+@mixin card { 
+    background: #fff; 
+    border:1px solid var.$border; 
+    border-radius:var.$radius; 
+    box-shadow:var.$shadow; 
+    padding:1.25rem; 
+}
+
+
+@mixin btn( $bg) { 
+    background:var.$bg-dark; 
+    color:#111; 
+    border:none; 
+    padding:.9rem 1.2rem; 
+    border-radius:999px; 
+    font-weight:var.$bold; cursor:pointer; 
+    transition:.2s; 
+    display:inline-block; 
+        &:hover{ 
+            transform:translateY(-1px); 
+        } 
+}

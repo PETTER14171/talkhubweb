@@ -1,0 +1,47 @@
+@use '../base/variables' as var;
+@use '../base/mixins' as mix;
+@use 'sass:color';
+
+:root{ 
+    color-scheme: light; 
+}
+
+
+*{ 
+    box-sizing:border-box; 
+}
+
+html,body{ 
+    padding:0; 
+    margin:0; 
+    font-family:var.$font-main; 
+}
+
+img{ 
+    max-width:100%; 
+    display:block; 
+}
+
+.container{ 
+    @include mix.container; 
+}
+
+.pad{ 
+    padding-block:3rem; 
+}
+
+.grid-2{ 
+    display:grid; 
+    grid-template-columns:1fr 1fr; 
+    gap:1rem; 
+}
+
+.grid-3{ 
+    display:grid; 
+    grid-template-columns:repeat(3,1fr); 
+    gap:1rem; 
+}
+
+@media (max-width: 900px){ 
+    .grid-2,.grid-3{ grid-template-columns:1fr; } 
+}

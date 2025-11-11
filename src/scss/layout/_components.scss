@@ -1,0 +1,44 @@
+@use '../base/variables' as var;
+@use '../base/mixins' as mix;
+
+
+.btn-primary{ 
+    background-color: var.$accent-2;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    color: var.$white;
+    text-decoration: none;
+}
+
+
+.btn-primary:hover {
+    background-color: var.$dark;
+    transform: scale(1.05);
+}
+
+
+.form{ 
+    display:grid; 
+    gap:1rem; 
+}
+
+.form label{ 
+    display:grid; 
+    gap:.35rem; 
+}
+
+.form input, .form textarea{
+    border:1px solid var.$border; 
+    border-radius:12px; 
+    padding: .85rem 1rem; font: inherit;
+    outline: none; 
+    transition: .15s; 
+    background:var.$white;
+}
+
+.form input:focus, .form textarea:focus{ 
+    box-shadow: 0 0 0 6px rgba(250, 197, 50,.15); 
+    border-color: rgba(250, 197, 50, 1);
+}
+
