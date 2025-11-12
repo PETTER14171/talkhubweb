@@ -1,4 +1,4 @@
 node_modules/
-build/
-*.mp4
+/build/img/*.mp4
+/src/img/*.mp4
 
