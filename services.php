@@ -7,153 +7,288 @@
 ?>
 
 <main>
-    <section class="about pad">
-        <div class="container about__grid">
-            <!-- Columna izquierda: collage de imágenes -->
-            <div class="Colum_left">
-                <figure class="about__img about__img--tall">
-                    <img src="/build/img/img_business.webp" alt="Team thumbs up">
+    <section class="services pad">
+        <div class="container services__grid">
+
+            <!-- LADO IZQUIERDO: 2 imágenes -->
+            <div class="services__media Colum_left">
+                <!-- Tarjeta principal -->
+                <figure class="media-card">
+                    <img class="media-card__img" src="/build/img/service-main.webp" alt="Omni-channel illustration">
+                </figure>
+
+                <!-- Tarjeta flotante (superpuesta) -->
+                <figure class="media-float">
+                    <img src="/build/img/service-float.webp" alt="Social media apps">
                 </figure>
             </div>
 
-            <!-- Columna derecha: texto -->
-            <div class="about__content Colum_right">
-                <h2>Enhance your brand and your business.</h2>
-                <div class="about__copy">
-                    <p>Improve your customer satisfaction and create new business opportunities through automation and digital transformation.</p>
-                    <p>Join the growing number of companies that work smart and hard.</p>
-                    <p>Take the next step toward efficiency and innovation. Our tailored solutions are designed to optimize your workflows, reduce operational costs, and help your team focus on what truly matters — delivering exceptional results. With the right tools and strategies, your business can move faster, adapt to change, and stay ahead of the competition.</p>
-                </div>
+            <!-- LADO DERECHO: contenido -->
+            <div class="services__content Colum_right">
+                <h2 class="">Services</h2>
+                <h1>Omni-channel customer support:</h1>
+                <p>
+                    Deliver seamless experiences across voice, chat, email, tickets, social media, and more — in both English and Spanish.
+                    Talk Hub's bilingual support teams are trained to meet your customers where they are, ensuring satisfaction and loyalty.
+                </p>
+                <!-- …botón/CTA si lo necesitas -->
             </div>
+
         </div>
     </section>
 
 
-    <section class="loc pad">
-        <div class="loc__bg"></div>
-
-        <div class="container loc__grid">
-            <div class="loc__text">
-                <h2>Our locations and services</h2>
-
-                <div class="loc__copy">
-                    <p>We are a BPO and Contact Center company based in the United States with operations in Mexico.</p>
-                    <p>We have the capacity to manage small campaigns and grow up to 500 operator positions.</p>
-                    <p>We offer bilingual services for businesses in the U.S. and Latin America providing scalable solutions tailored to each market’s needs.</p>
-                </div>
+    <section class="performance pad" style="--bg:url('/build/img/perf-bg.webp')">
+        <div class="container performance__grid">
+            <div class="performance__copy">
+                <h2>Performance that sets us apart</h2>
+                <ul class="performance__bullets">
+                    <li><strong>Less than 0.99% Abandon Rate</strong> Every customer gets the help they need, the first time.</li>
+                    <li><strong>Single-Digit Attrition</strong> Stable teams drive performance, consistency, and long-term knowledge retention.</li>
+                    <li><strong>QA Scores Consistently Above Target</strong> Quality interactions, every time — no exceptions.</li>
+                </ul>
+                <p>Beyond support, we deliver brand-aligned service that builds trust and loyalty.</p>
             </div>
 
-            <figure class="loc__media">
-                <img src="/build/img/map.webp" alt="Map of Mexico and network connections" />
+            <figure class="performance__card ">
+                <img src="/build/img/perf-side.webp" alt="Team reviewing results">
             </figure>
         </div>
     </section>
 
-    <section class="strategy loc">
-        <div class="strategy__overlay"></div>
-        <div class="container strategy__grid ">
-            <div class="strategy__img" loc></div>
-            <div class="strategy__text">
-                <h2>
-                    We develop customized strategies and tailor our services to address each client's unique operational challenges and growth objectives.
-                </h2>
-            </div>
-        </div>
-    </section>
+    <section class="kpi pad">
+        <div class="container kpi__grid">
+            <div class="kpi__copy Colum_left">
+                <h2>High Productivity, 98% + Accuracy</h2>
+                <p>Your business processes are the lifeblood of your operations. We ensure
+                    efficiency and precision — especially in document processing workflows.</p>
 
-    <section class="about pad">
-        <div class="container about__grid">
-            <!-- Columna derecha: texto -->
-            <div class="about__content_R Colum_left">
-                <h2>Building Innovation Across Borders.</h2>
-                <div class="about__copy">
-                    <p>From the heart of Texas to the industrial of Naucalpan, Mexico, our company bridges a of opportunity. We combine the entrepreneurial spirit and innovation of the United States with the precision, talent, and dedication of Mexican. This unique synergy allows us to deliver world-class solutions with local agility and global impact.</p>
-                    <p>Our operations in Texas serve as the strategic center for research, business development, and client relations, while our facilities in Naucalpan drive production, technology, and customer support. Together, they form a powerful network that integrates experience, quality, and efficiency — ensuring every project meets the highest international standards.</p>
-                    <p>We believe in building more than products — we build partnerships that last. Our commitment to excellence, transparency, and continuous improvement has earned the trust of clients across multiple industries, from technology and manufacturing to logistics and customer service.</p>
-                    <p>As we continue to grow, our mission remains clear: to empower businesses through innovation, automation, and cross-border collaboration. With a presence in both the U.S. and Mexico, we’re not just connecting regions — we’re shaping the future of global business.</p>
-                </div>
+                <h3>Flexibility and Commitment</h3>
+                <p>To scale your team when and how you need it. Our workforce maintains 99% +
+                    adherence to business requirements and shifts seamlessly between tasks to
+                    keep operations flowing.</p>
             </div>
-            <!-- Columna izquierda: collage de imágenes -->
-            <div class="Colum_right">
-                <figure class="about__img about__img--tall">
-                    <img src="/build/img/torres_naucalpan.webp" alt="Team thumbs up">
+
+            <!-- Imagen con "marco de hoja" -->
+            <div class="kpi__frame Colum_right">
+                <figure class="kpi__media">
+                    <img src="/build/img/ops-analytics.webp" alt="Operations analytics">
                 </figure>
             </div>
         </div>
     </section>
 
-
-<section class="boost">
-    <video class="boost__video"
-            src="/build/img/Boost_cohete.mp4"
-            poster="/build/img/boost_poster.jpg"
-            autoplay
-            muted
-            loop
-            playsinline></video>
-
-    <div class="boost__overlay"></div>
-
-    <div class="container boost__content">
-        <div class="boost__bubble">
-        <h2>
-            We work closely with our clients to understand their goals and challenges,
-            then leverage our expertise to deliver measurable results that drive
-            sustainable growth
-        </h2>
+    <section class="bpo-hero" style="--bg:url('/build/img/backoffice-bpo.webp')">
+        <div class="container bpo-hero__inner">
+            <div class="bpo-hero__copy">
+            <h2>Back Office BPO</h2>
+            <p>
+                At TalkHub, we combine skilled talent with AI-powered tools to support real-time and back-office processes — both internal and customer-facing — from our nearshore location in Mexico. Our teams bring a personalized, human touch with full omnichannel capability.
+            </p>
+            </div>
         </div>
-    </div>
+    </section>
 
-
-
-</section>
-
-
-<section class="founders pad">
-  <div class="container">
-    <header class="founders__header">
-      <h2>We Strive To Be A True Business Partner</h2>
-      <span class="founders__line"></span>
-    </header>
-
-    <div class="founders__grid">
-      <!-- Lado izquierdo: imagen con botón de play -->
-      <div class="founders__media">
-        <img src="/build/img/handshake.webp" alt="Handshake between business partners">
-        <button class="founders__play" id="playVideoBtn" aria-label="Play video">
-          <span>▶</span>
-        </button>
-      </div>
-
-      <!-- Lado derecho: mensaje de fundadores -->
-      <div class="founders__quote">
-        <blockquote>
-          “At Talk-Hub, we believe that the combination of hard work and perseverance,
-          coupled with a clear vision can meet any and all challenges we may face
-          and generate a positive impact in our sector. We know the inherent risks
-          that come with entrepreneurial endeavors, but our team — skilled, committed
-          and adaptable — can and will achieve our goals, transform our business
-          while creating & fortifying partnerships.”
-        </blockquote>
-        <div class="founders__authors">
-          <img src="/build/img/founders.jpg" alt="Founders" class="founders__avatar">
-          <div>
-            <strong>Ernesto Lara - Oscar Olmedo - Antonio Zanella</strong>
-            <div class="founders__role">Founders</div>
-          </div>
+    <section class="impact pad">
+        <div class="container impact__grid">
+            <!-- Imagen izquierda (tarjeta) -->
+             <div class="Colum_left">
+                <figure class="impact__media">
+                    <img src="/build/img/analytics-team.webp" alt="Team reviewing analytics">
+                </figure>
+            </div>
+            <!-- Texto derecha -->
+            <div class="impact__copy Colum_right">
+                <h2>
+                    Consistent Results<br>
+                    and Measurable<br>
+                    Impact
+                </h2>
+                <p>
+                    Achieving 95–110% of collection targets, we engage, commit, and deliver —
+                    exceeding recovery goals while preserving your customer relationships and
+                    maintaining Net Promoter Scores above 90%.
+                </p>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Modal del video -->
-  <div class="video-modal" id="videoModal">
-    <div class="video-modal__content">
-      <span class="video-modal__close" id="closeVideoBtn">&times;</span>
-      <video src="/build/img/founders.mp4" controls autoplay></video>
-    </div>
-  </div>
-</section>
+    <section class="collections pad" style="--bg:url('/build/img/collections-bg.webp')">
+        <div class="container collections__inner">
+            
+            <!-- Texto principal -->
+            <div class="collections__copy">
+                <h2>Collections</h2>
+                <p>
+                    At TalkHub, achieving above-average recovery rates requires both skilled agents and
+                    advanced technology — including omnichannel communication and strategic contact
+                    workflows. Our approach is designed to maximize user reach and drive on-time
+                    payments — especially in early-stage recovery programs.
+                </p>
+            </div>
+
+            <!-- Tarjeta de imagen derecha -->
+            <figure class="collections__media">
+                <img src="/build/img/collections-team.webp" alt="Collections team">
+            </figure>
+
+        </div>
+    </section>
+
+    <section id="sales" class="sales pad">
+        <div class="container">
+
+            <!-- Bloque superior: imágenes + título y copy -->
+            <div class="sales__top">
+                <div class="sales__top-media Colum_left">
+                    <img
+                    src="/build/img/sales-main.webp"
+                    alt="Sales team celebrating"
+                    class="sales__img sales__img--main"
+                    >
+                    <img
+                    src="/build/img/sales-small.webp"
+                    alt="Happy sales team"
+                    class="sales__img sales__img--small"
+                    >
+                </div>
+
+                <div class="sales__top-copy Colum_right">
+                    <h2>Sales</h2>
+                    <p>
+                    Drive revenue, improve conversion rates and increase customer retention
+                    with TalkHub’s omnichannel sales support — powered by data-driven
+                    strategies and a proven consultative approach.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bloque inferior: texto + imagen tipo hoja -->
+            <div class="sales__bottom">
+                <div class="sales__bottom-copy Colum_left">
+                    <h3>Proven Sales Methodology</h3>
+                    <p>
+                    Our consultative approach builds trust, improves close rates, and
+                    maximizes customer lifetime value — whether B2B or B2C.
+                    </p>
+
+                    <h3>Omnichannel Sales Execution</h3>
+                    <p>
+                    We support inbound and outbound programs across voice, chat, email
+                    and social — meeting your customers where they are, when it matters
+                    most.
+                    </p>
+                </div>
+
+                <div class="Colum_right">
+                    <figure class="sales__leaf">
+                        <img src="/build/img/sales-leaf.webp" alt="Successful sales celebration">
+                    </figure>
+                    <p class="sales__note">
+                        With TALKHUB, every customer interaction <br> becomes a revenue opportunity.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="clients">
+        <div class="clients__overlay">
+            <div class="container clients__inner">
+            <h2 class="clients__title">
+                Together, making your business look good!
+            </h2>
+            <p class="clients__text">
+                We deliver outstanding customer experiences that boost client
+                satisfaction and build stronger customer connections.
+            </p>
+
+            <!-- Carrusel de logos -->
+                <div class="clients__carousel" aria-label="Our clients">
+                    <div class="clients__track">
+                        <!-- LOGOS (repite / agrega los que tengas) -->
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_xfinity.webp" alt="Tala">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_tala.webp" alt="SurfMed">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_sufmed.webp" alt="Shriners Children's">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_shriners.webp" alt="Peddle">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_peddle.webp" alt="Peddle">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_nuveto.webp" alt="Peddle">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_five9.webp" alt="Peddle">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_cox.webp" alt="Peddle">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_comcast.webp" alt="Peddle">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_calls.webp" alt="Peddle">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_bryam.webp" alt="Peddle">
+                        </div>
+
+                        <!-- duplicados para efecto infinito -->
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_xfinity.webp" alt="Tala">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_tala.webp" alt="SurfMed">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_sufmed.webp" alt="Shriners Children's">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_shriners.webp" alt="Peddle">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_peddle.webp" alt="Peddle">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_nuveto.webp" alt="Peddle">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_five9.webp" alt="Peddle">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_cox.webp" alt="Peddle">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_comcast.webp" alt="Peddle">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_calls.webp" alt="Peddle">
+                        </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_bryam.webp" alt="Peddle">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Barra inferior tipo “Visit our CaseStudy section Now” -->
+        <div class="clients__cta">
+            <div class="container clients__cta-inner">
+                <span>Visit our CaseStudy section</span>
+                <a class="clients__cta-btn" href="/case-studies.php">Now</a>
+            </div>
+        </div>
+    </section>
 
 
 <?php 
