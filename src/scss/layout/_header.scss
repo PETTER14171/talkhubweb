@@ -3,11 +3,6 @@
 
 
 // ===== Header / Nav =====
-
-.brand img{
-    max-width: 25%;
-}
-
 .site-header {
   position: absolute;
   top: 0;
@@ -16,6 +11,15 @@
   z-index: 10; // asegúrate de que sea mayor que el ::before del hero
   background: transparent; // elimina el fondo sólido
   border: none; // opcional si tenías borde
+}
+
+.secondary{
+    position: relative;
+    background-color: var.$dark;
+}
+
+.brand img{
+    max-width: 25%;
 }
 
 .site-header .nav{ 
