@@ -84,7 +84,7 @@
                     <p>As a U.S.-based organization with operations in Mexico, we serve companies across North and Latin America. Our bilingual teams support clients seeking more than traditional BPO and Call Center services—we provide smart, agile solutions built for growth.</p>
                 </div>
 
-                <a class="btn-primary" href="/contact.php"> Contact us <span aria-hidden="true">→</span></a>
+                <a class="btn-primary" href="#contact"> Contact us <span aria-hidden="true">→</span></a>
             </div>
         </div>
     </section>
@@ -110,7 +110,7 @@
     </section>
 
     
-        <section class="about pad">
+    <section class="about pad">
         <div class="container about__grid">
             <!-- Columna izquierda: collage de imágenes -->
             <div class="">
@@ -125,6 +125,7 @@
                 <div class="about__copy">
                     <p>Improve your customer satisfaction and create new business opportunities through automation and digital transformation.</p>
                     <p>Join the growing number of companies that work smart and hard.</p>
+                    <p>Take the next step toward efficiency and innovation. Our tailored solutions are designed to optimize your workflows, reduce operational costs, and help your team focus on what truly matters — delivering exceptional results. With the right tools and strategies, your business can move faster, adapt to change, and stay ahead of the competition.</p>
                 </div>
             </div>
         </div>
@@ -142,7 +143,26 @@
         </div>
     </section>
 
-
+    <section class="about pad">
+        <div class="container about__grid">
+            <!-- Columna derecha: texto -->
+            <div class="about__content_R">
+                <h2>Building Innovation Across Borders.</h2>
+                <div class="about__copy">
+                    <p>From the heart of Texas to the industrial of Naucalpan, Mexico, our company bridges a of opportunity. We combine the entrepreneurial spirit and innovation of the United States with the precision, talent, and dedication of Mexican. This unique synergy allows us to deliver world-class solutions with local agility and global impact.</p>
+                    <p>Our operations in Texas serve as the strategic center for research, business development, and client relations, while our facilities in Naucalpan drive production, technology, and customer support. Together, they form a powerful network that integrates experience, quality, and efficiency — ensuring every project meets the highest international standards.</p>
+                    <p>We believe in building more than products — we build partnerships that last. Our commitment to excellence, transparency, and continuous improvement has earned the trust of clients across multiple industries, from technology and manufacturing to logistics and customer service.</p>
+                    <p>As we continue to grow, our mission remains clear: to empower businesses through innovation, automation, and cross-border collaboration. With a presence in both the U.S. and Mexico, we’re not just connecting regions — we’re shaping the future of global business.</p>
+                </div>
+            </div>
+            <!-- Columna izquierda: collage de imágenes -->
+            <div class="">
+                <figure class="about__img about__img--tall">
+                    <img src="/build/img/torres_naucalpan.webp" alt="Team thumbs up">
+                </figure>
+            </div>
+        </div>
+    </section>
 
 
 <section class="boost">
@@ -170,32 +190,39 @@
 
 </section>
 
-<section class="founders pad">
-  <div class="container founders__grid">
-    
-    <!-- Lado izquierdo: imagen con botón de play -->
-    <div class="founders__media">
-      <img src="/build/img/handshake.webp" alt="Handshake between business partners">
-      <button class="founders__play" id="playVideoBtn" aria-label="Play video">
-        <span>▶</span>
-      </button>
-    </div>
 
-    <!-- Lado derecho: mensaje de fundadores -->
-    <div class="founders__quote">
-      <blockquote>
-        “At Talk-Hub, we believe that the combination of hard work and perseverance,
-        coupled with a clear vision can meet any and all challenges we may face
-        and generate a positive impact in our sector. We know the inherent risks
-        that come with entrepreneurial endeavors, but our team — skilled, committed
-        and adaptable — can and will achieve our goals, transform our business
-        while creating & fortifying partnerships.”
-      </blockquote>
-      <div class="founders__authors">
-        <img src="/build/img/founders.jpg" alt="Founders" class="founders__avatar">
-        <div>
-          <strong>Ernesto Lara - Oscar Olmedo - Antonio Zanella</strong>
-          <div class="founders__role">Founders</div>
+<section class="founders pad">
+  <div class="container">
+    <header class="founders__header">
+      <h2>We Strive To Be A True Business Partner</h2>
+      <span class="founders__line"></span>
+    </header>
+
+    <div class="founders__grid">
+      <!-- Lado izquierdo: imagen con botón de play -->
+      <div class="founders__media">
+        <img src="/build/img/handshake.webp" alt="Handshake between business partners">
+        <button class="founders__play" id="playVideoBtn" aria-label="Play video">
+          <span>▶</span>
+        </button>
+      </div>
+
+      <!-- Lado derecho: mensaje de fundadores -->
+      <div class="founders__quote">
+        <blockquote>
+          “At Talk-Hub, we believe that the combination of hard work and perseverance,
+          coupled with a clear vision can meet any and all challenges we may face
+          and generate a positive impact in our sector. We know the inherent risks
+          that come with entrepreneurial endeavors, but our team — skilled, committed
+          and adaptable — can and will achieve our goals, transform our business
+          while creating & fortifying partnerships.”
+        </blockquote>
+        <div class="founders__authors">
+          <img src="/build/img/founders.jpg" alt="Founders" class="founders__avatar">
+          <div>
+            <strong>Ernesto Lara - Oscar Olmedo - Antonio Zanella</strong>
+            <div class="founders__role">Founders</div>
+          </div>
         </div>
       </div>
     </div>
@@ -205,34 +232,17 @@
   <div class="video-modal" id="videoModal">
     <div class="video-modal__content">
       <span class="video-modal__close" id="closeVideoBtn">&times;</span>
-      <video src="/build/video/founders.mp4" controls autoplay></video>
+      <video src="/build/img/founders.mp4" controls autoplay></video>
     </div>
   </div>
 </section>
 
 
-<section id="contact" class="container pad">
-    <h2>Contact Us</h2>
-    <form class="form" action="https://formsubmit.co/soporte@talk-hub.com" method="POST">
-        <input type="hidden" name="_cc" value="admin@talk-hub.com, sistemas@talk-hub.com">
-        <input type="hidden" name="_bcc" value="gerencia@talk-hub.com">
-        <input type="hidden" name="_subject" value="New message from website" />
-        <input type="hidden" name="_captcha" value="false" />
-        <div class="grid-2">
-            <label><span>Name</span><input type="text" name="nombre" required></label>
-            <label><span>Email</span><input type="email" name="correo" required></label>
-        </div>
-        <label><span>Subject</span><input type="text" name="asunto" required></label>
-        <label><span>Message</span><textarea name="mensaje" rows="5" required></textarea></label>
-        <button class="btn btn-primary" type="submit">Send</button>
-    </form>
-</section>
+<?php 
+incluirTemplate('contact');
+?>
 
 </main>
-
-
-
-
 
 <?php 
 incluirTemplate('footer');

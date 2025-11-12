@@ -50,24 +50,45 @@ first && first.focus();
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  const modal = document.getElementById("videoModal");
-  const playBtn = document.getElementById("playVideoBtn");
-  const closeBtn = document.getElementById("closeVideoBtn");
+    // 1. Obtener los elementos principales
+    const modal = document.getElementById("videoModal");
+    const playBtn = document.getElementById("playVideoBtn");
+    const closeBtn = document.getElementById("closeVideoBtn");
+    // Se añade una variable para el elemento de video directamente
+    const videoElement = modal ? modal.querySelector("video") : null;
 
-  playBtn?.addEventListener("click", () => {
-    modal.classList.add("active");
-  });
+    // 2. Manejador para abrir el modal y reproducir
+    playBtn?.addEventListener("click", () => {
+        if (modal) {
+            modal.classList.add("active");
+        }
+        // Opcional: Iniciar reproducción automática si existe el elemento de video
+        if (videoElement) {
+            videoElement.play();
+        }
+    });
 
-  closeBtn?.addEventListener("click", () => {
-    modal.classList.remove("active");
-    modal.querySelector("video").pause();
-  });
+    // 3. Función para cerrar el modal y detener/resetear el video
+    const closeModal = () => {
+        if (modal) {
+            modal.classList.remove("active");
+        }
+        if (videoElement) {
+            // Detiene la reproducción
+            videoElement.pause();
+            // Importante: Resetea el video al inicio para la próxima vez
+            videoElement.currentTime = 0;
+        }
+    };
 
-  // Cerrar al hacer click fuera del video
-  modal?.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.classList.remove("active");
-      modal.querySelector("video").pause();
-    }
-  });
+    // 4. Manejador para el botón de cierre
+    closeBtn?.addEventListener("click", closeModal);
+
+    // 5. Manejador para cerrar al hacer clic fuera del contenido (en el overlay del modal)
+    modal?.addEventListener("click", (e) => {
+        // e.target es el elemento donde se hizo clic
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
 });
