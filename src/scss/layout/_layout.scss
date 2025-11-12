@@ -166,11 +166,24 @@
     box-shadow: 0 10px 30px rgba(0,0,0,.08);
     img{ display:block; width:100%; height:100%; object-fit:cover; }
 }
-.about__img--tall{
+
+.about__img--tall {
   grid-column: 1 / 2;
-  grid-row: 1 / 3;              /* ocupa dos filas */
-  min-height: clamp(340px, 52vh, 520px);
+  grid-row: 1 / 3;
+  min-height: clamp(320px, 48vh, 500px);
+  overflow: hidden; // evita que la imagen se desborde al hacer zoom
 }
+
+.about__img--tall img {
+  transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1); // más suave
+  transform-origin: center center;
+}
+
+.about__img--tall:hover img {
+  transform: scale(1.08);
+}
+
+
 .about__img--top{
   grid-column: 2 / 3;
   grid-row: 1 / 2;
@@ -201,6 +214,7 @@
     align-items: center;
     text-align: center;
 }
+
 .xp-badge__num{
     font-weight: var.$black-f;
     font-size: clamp(2rem, 4vw, 3rem);
@@ -270,10 +284,7 @@
   overflow: hidden;
   /* espacio vertical moderado */
   padding-block: clamp(2rem, 6vw, 4rem);
-  background:
-    radial-gradient(1200px 600px at 15% 0%, rgba(255,255,255,.08) 0, rgba(255,255,255,0) 60%),
-    radial-gradient(900px 500px at 75% 40%, rgba(255,255,255,.06) 0, rgba(255,255,255,0) 60%),
-    linear-gradient(180deg, #0e4e92 0%, #0c4a86 100%); /* azul base */
+  background: linear-gradient(90deg, #0b3e74 0%, #052b52 100%);
 }
 
 /* Capa extra de curvas muy sutiles (no imagen) */
@@ -505,6 +516,7 @@
 .founders__media:hover img {
   transform: scale(1.05);
 }
+
 
 /* Botón de Play */
 .founders__play {

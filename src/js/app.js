@@ -92,3 +92,155 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+
+///Animaciones
+
+document.addEventListener('DOMContentLoaded', () => {
+  const badge = document.querySelector('.xp-badge');
+  if (!badge) return;
+
+  const numWrap = badge.querySelector('.xp-badge__num');
+  if (!numWrap) return;
+
+  // Asegura que tenemos un nodo de texto solo para el número
+  let numberTextNode = Array.from(numWrap.childNodes).find(n => n.nodeType === 3);
+  if (!numberTextNode) {
+    numberTextNode = document.createTextNode('0');
+    numWrap.insertBefore(numberTextNode, numWrap.firstChild);
+  }
+
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const animateCount = (from = 1, to = 25, duration = 1200) => {
+    if (prefersReduced) {
+      numberTextNode.nodeValue = String(to);
+      badge.classList.add('pulse-zoom');
+      return;
+    }
+
+    const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+    let startTs = null;
+
+    const step = (ts) => {
+      if (startTs === null) startTs = ts;
+      const p = Math.min((ts - startTs) / duration, 1);
+      const eased = easeOutCubic(p);
+      const current = Math.max(from, Math.floor(from + (to - from) * eased));
+      numberTextNode.nodeValue = String(current);
+
+      if (p < 1) {
+        requestAnimationFrame(step);
+      } else {
+        numberTextNode.nodeValue = String(to);
+        badge.classList.add('pulse-zoom');
+      }
+    };
+
+    requestAnimationFrame(step);
+  };
+
+  // Dispara cuando el badge entra al viewport (una sola vez)
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !badge.dataset.animated) {
+        badge.dataset.animated = '1';
+        animateCount(1, 25, 1200);
+      }
+    });
+  }, { threshold: 0.35 });
+
+  io.observe(badge);
+
+  // Opcional: permitir repetir la animación si deseas
+  badge.addEventListener('animationend', (e) => {
+    if (e.animationName === 'badgePulse') {
+      badge.classList.remove('pulse-zoom');
+      // Si quieres que se pueda repetir más adelante, elimina el flag:
+      // delete badge.dataset.animated;
+    }
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const badge = document.querySelector('.xp-badge');
+  if (!badge) return;
+
+  const numWrap = badge.querySelector('.xp-badge__num');
+  let numberTextNode = Array.from(numWrap.childNodes).find(n => n.nodeType === 3);
+  if (!numberTextNode) {
+    numberTextNode = document.createTextNode('0');
+    numWrap.insertBefore(numberTextNode, numWrap.firstChild);
+  }
+
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const animateCount = (from = 1, to = 25, duration = 1200) => {
+    if (prefersReduced) {
+      numberTextNode.nodeValue = String(to);
+      badge.classList.add('pulse-zoom');
+      return;
+    }
+
+    const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+    let startTs = null;
+
+    const step = (ts) => {
+      if (startTs === null) startTs = ts;
+      const p = Math.min((ts - startTs) / duration, 1);
+      const eased = easeOutCubic(p);
+      const current = Math.max(from, Math.floor(from + (to - from) * eased));
+      numberTextNode.nodeValue = String(current);
+
+      if (p < 1) {
+        requestAnimationFrame(step);
+      } else {
+        numberTextNode.nodeValue = String(to);
+        badge.classList.add('pulse-zoom'); // dispara el zoom
+      }
+    };
+
+    requestAnimationFrame(step);
+  };
+
+  // 👇 se dispara al entrar en viewport
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !badge.dataset.animated) {
+        badge.dataset.animated = 'true'; // evita repetir
+        animateCount(1, 25, 1200);
+      }
+    });
+  }, { threshold: 0.4 }); // visible al menos 40%
+
+  observer.observe(badge);
+
+  badge.addEventListener('animationend', (e) => {
+    if (e.animationName === 'badgePulse') {
+      badge.classList.remove('pulse-zoom');
+    }
+  });
+});
+
+////////////////////////////////////////////////////
+//acimacion de de dos columnas izquierda y derecha//
+////////////////////////////////////////////////////
+
+document.addEventListener("DOMContentLoaded", () => {
+  const elements = document.querySelectorAll(".Colum_left, .Colum_right");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // Detiene la observación una vez animado
+      }
+    });
+  }, {
+    threshold: 0.3 // el 30% del elemento visible activa la animación
+  });
+
+  elements.forEach(el => observer.observe(el));
+});

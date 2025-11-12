@@ -9,21 +9,21 @@
 <main>
 <!-- HERO como la captura -->
     <section class="hero hero--cover">
-    <div class="hero__slides" data-interval="7000">
-        <div class="hero__slide is-active" style="--img:url('/build/img/hero-1.webp')"></div>
-        <div class="hero__slide" style="--img:url('/build/img/hero-2.webp')"></div>
-        <div class="hero__slide" style="--img:url('/build/img/hero-3.webp')"></div>
-    </div>
+        <div class="hero__slides" data-interval="7000">
+            <div class="hero__slide is-active" style="--img:url('/build/img/hero-1.webp')"></div>
+            <div class="hero__slide" style="--img:url('/build/img/hero-2.webp')"></div>
+            <div class="hero__slide" style="--img:url('/build/img/hero-3.webp')"></div>
+        </div>
 
-    <div class="hero__overlay"></div>
+        <div class="hero__overlay"></div>
 
-    <div class="container hero__content">
-        <h1>Partnership and growth opportunities for your business at a nearshore location</h1>
-    </div>
+        <div class="container hero__content">
+            <h1>Partnership and growth opportunities for your business at a nearshore location</h1>
+        </div>
     </section>
 
 
-<!-- Tira de cápsulas flotante -->
+
     <section class="pill-strip">
         <div class="container">
             <div class="pill">
@@ -113,14 +113,14 @@
     <section class="about pad">
         <div class="container about__grid">
             <!-- Columna izquierda: collage de imágenes -->
-            <div class="">
+            <div class="Colum_left">
                 <figure class="about__img about__img--tall">
                     <img src="/build/img/img_business.webp" alt="Team thumbs up">
                 </figure>
             </div>
 
             <!-- Columna derecha: texto -->
-            <div class="about__content">
+            <div class="about__content Colum_right">
                 <h2>Enhance your brand and your business.</h2>
                 <div class="about__copy">
                     <p>Improve your customer satisfaction and create new business opportunities through automation and digital transformation.</p>
@@ -132,7 +132,7 @@
     </section>
 
     <section class="strategy loc">
-    <div class="strategy__overlay"></div>
+        <div class="strategy__overlay"></div>
         <div class="container strategy__grid ">
             <div class="strategy__img" loc></div>
             <div class="strategy__text">
@@ -146,7 +146,7 @@
     <section class="about pad">
         <div class="container about__grid">
             <!-- Columna derecha: texto -->
-            <div class="about__content_R">
+            <div class="about__content_R Colum_left">
                 <h2>Building Innovation Across Borders.</h2>
                 <div class="about__copy">
                     <p>From the heart of Texas to the industrial of Naucalpan, Mexico, our company bridges a of opportunity. We combine the entrepreneurial spirit and innovation of the United States with the precision, talent, and dedication of Mexican. This unique synergy allows us to deliver world-class solutions with local agility and global impact.</p>
@@ -156,7 +156,7 @@
                 </div>
             </div>
             <!-- Columna izquierda: collage de imágenes -->
-            <div class="">
+            <div class="Colum_right">
                 <figure class="about__img about__img--tall">
                     <img src="/build/img/torres_naucalpan.webp" alt="Team thumbs up">
                 </figure>
