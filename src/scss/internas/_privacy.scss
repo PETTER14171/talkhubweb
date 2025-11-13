@@ -1,0 +1,23 @@
+@use '../base/variables' as var;
+@use '../base/mixins' as mix;
+@use 'sass:color';
+
+.privacy h2{
+  font-weight: var.$bold;
+  font-size: 3.5rem;
+  padding: 1.2rem;
+}
+
+.privacy h3{
+  font-weight: var.$bold;
+  font-size: 1.8rem;
+}
+
+
+.privacy p{
+  font-weight: var.$regular;
+  color: var.$color-txt;
+  text-align: justify;
+  width: 70%;
+}
+

@@ -6,6 +6,7 @@
     incluirTemplate('header');
 ?>
 
+
 <main>
 <!-- HERO como la captura -->
     <section class="hero hero--cover">
@@ -193,48 +194,48 @@
 
 <section class="founders pad">
   <div class="container">
-    <header class="founders__header">
-      <h2>We Strive To Be A True Business Partner</h2>
-      <span class="founders__line"></span>
-    </header>
+        <header class="founders__header">
+        <h2>We Strive To Be A True Business Partner</h2>
+        <span class="founders__line"></span>
+        </header>
 
-    <div class="founders__grid">
-      <!-- Lado izquierdo: imagen con botón de play -->
-      <div class="founders__media">
-        <img src="/build/img/handshake.webp" alt="Handshake between business partners">
-        <button class="founders__play" id="playVideoBtn" aria-label="Play video">
-          <span>▶</span>
-        </button>
-      </div>
-
-      <!-- Lado derecho: mensaje de fundadores -->
-      <div class="founders__quote">
-        <blockquote>
-          “At Talk-Hub, we believe that the combination of hard work and perseverance,
-          coupled with a clear vision can meet any and all challenges we may face
-          and generate a positive impact in our sector. We know the inherent risks
-          that come with entrepreneurial endeavors, but our team — skilled, committed
-          and adaptable — can and will achieve our goals, transform our business
-          while creating & fortifying partnerships.”
-        </blockquote>
-        <div class="founders__authors">
-          <img src="/build/img/founders.jpg" alt="Founders" class="founders__avatar">
-          <div>
-            <strong>Ernesto Lara - Oscar Olmedo - Antonio Zanella</strong>
-            <div class="founders__role">Founders</div>
-          </div>
+        <div class="founders__grid">
+        <!-- Lado izquierdo: imagen con botón de play -->
+        <div class="founders__media">
+            <img src="/build/img/handshake.webp" alt="Handshake between business partners">
+            <button class="founders__play" id="playVideoBtn" aria-label="Play video">
+            <span>▶</span>
+            </button>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Modal del video -->
-  <div class="video-modal" id="videoModal">
-    <div class="video-modal__content">
-      <span class="video-modal__close" id="closeVideoBtn">&times;</span>
-      <video src="/build/img/founders.mp4" controls autoplay></video>
+        <!-- Lado derecho: mensaje de fundadores -->
+        <div class="founders__quote">
+            <blockquote>
+            “At Talk-Hub, we believe that the combination of hard work and perseverance,
+            coupled with a clear vision can meet any and all challenges we may face
+            and generate a positive impact in our sector. We know the inherent risks
+            that come with entrepreneurial endeavors, but our team — skilled, committed
+            and adaptable — can and will achieve our goals, transform our business
+            while creating & fortifying partnerships.”
+            </blockquote>
+            <div class="founders__authors">
+            <img src="/build/img/founders.jpg" alt="Founders" class="founders__avatar">
+            <div>
+                <strong>Ernesto Lara - Oscar Olmedo - Antonio Zanella</strong>
+                <div class="founders__role">Founders</div>
+            </div>
+            </div>
+        </div>
+        </div>
     </div>
-  </div>
+
+    <!-- Modal del video -->
+    <div class="video-modal" id="videoModal"> 
+        <div class="video-modal__content"> 
+            <span class="video-modal__close" id="closeVideoBtn">&times;</span> 
+            <video src="/build/img/founders.mp4" preload="auto" controls autoplay></video> 
+        </div> 
+    </div>
 </section>
 
 
