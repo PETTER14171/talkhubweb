@@ -3,20 +3,27 @@
         <div class="container">
             <h2 class="contact__title">Contact us</h2>
 
-            <form class="form contact__form" action="https://formsubmit.co/soporte@talk-hub.com" method="POST">
-                <input type="hidden" name="_cc" value="admin@talk-hub.com, sistemas@talk-hub.com">
-                <input type="hidden" name="_bcc" value="gerencia@talk-hub.com">
-                <input type="hidden" name="_subject" value="New message from website" />
-                <input type="hidden" name="_captcha" value="false" />
+            <form class="form" action="/mail/send.php" method="POST" novalidate>
+                <input type="hidden" name="redirect_to" value="<?= htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES) ?>">
 
                 <div class="grid-2">
-                    <label><span>Full name *</span><input type="text" name="nombre" required></label>
-                    <label><span>Email *</span><input type="email" name="correo" required></label>
+                    <label>
+                        <span>Nombre</span>
+                        <input type="text" name="nombre" required>
+                    </label>
+                    <label>
+                        <span>Correo</span>
+                        <input type="email" name="correo" required>
+                    </label>
                 </div>
-
-                <label><span>Subject *</span><input type="text" name="asunto" required></label>
-                <label><span>Phone</span><input type="tel" name="telefono"></label>
-                <label><span>Message</span><textarea name="mensaje" rows="5" required></textarea></label>
+                <label>
+                    <span>Asunto</span>
+                    <input type="text" name="asunto" required>
+                </label>
+                <label>
+                    <span>Mensaje</span>
+                    <textarea name="mensaje" rows="5" required></textarea>
+                </label>
 
                 <label class="contact__legal">
                     <input type="checkbox" required>
@@ -66,3 +73,5 @@
     </section>
 
 </main>
+
+

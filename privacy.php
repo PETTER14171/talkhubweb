@@ -1,3 +1,18 @@
+<?php if (!empty($_GET['ok'])): ?>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Swal.fire({
+                title: 'Message sent!',
+                text: 'Thank you for contacting us. We will get back to you shortly.',
+                icon: 'success',
+                timer: 3500,
+                timerProgressBar: true,
+                showConfirmButton: false
+            });
+        });
+    </script>
+<?php endif; ?>
+
 <?php 
     $page_title = 'Nosotros — Talk‑Hub';
     $page_desc = 'Conoce nuestro equipo y metodología.';

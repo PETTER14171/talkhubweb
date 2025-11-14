@@ -12,6 +12,7 @@ $page_desc = $page_desc ?? 'Soluciones de soporte técnico y contact center.';
     <meta name="description" content="<?= htmlspecialchars($page_desc) ?>" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=business_center" />
     <link rel="stylesheet" href="/build/css/app.css" />
     <link rel="icon" href="/assets/favicon.ico" />
