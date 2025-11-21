@@ -27,10 +27,10 @@
 
                 <label class="contact__legal">
                     <input type="checkbox" required>
-                    <span>Acepto la <a href="/privacy.php" target="_blank" rel="noopener">política de privacidad</a> y recibir información</span>
+                    <span>I accept the <a href="/privacy.php" target="_blank" rel="noopener">privacy policy</a> and agree to receive information.</span>
                 </label>
 
-                <button class="btn btn-primary contact__submit" type="submit">Enviar</button>
+                <button class="btn btn-primary contact__submit" type="submit">Submit</button>
             </form>
         </div>
             <!-- partados de footer redes sociales -->

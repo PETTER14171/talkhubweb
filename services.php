@@ -44,7 +44,7 @@
                 <h1>Omni-channel customer support:</h1>
                 <p>
                     Deliver seamless experiences across voice, chat, email, tickets, social media, and more — in both English and Spanish.
-                    Talk Hub's bilingual support teams are trained to meet your customers where they are, ensuring satisfaction and loyalty.
+                    TalkHub bilingual support teams are trained to meet your customers where they are, ensuring satisfaction and loyalty.
                 </p>
                 <!-- …botón/CTA si lo necesitas -->
             </div>
@@ -256,6 +256,9 @@
                         <div class="clients__logo">
                             <img src="/build/img/Logo_bryam.webp" alt="Peddle">
                         </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_welcome.webp" alt="Peddle">
+                        </div>
 
                         <!-- duplicados para efecto infinito -->
                         <div class="clients__logo">
@@ -291,6 +294,9 @@
                         <div class="clients__logo">
                             <img src="/build/img/Logo_bryam.webp" alt="Peddle">
                         </div>
+                        <div class="clients__logo">
+                            <img src="/build/img/Logo_welcome.webp" alt="Peddle">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -300,7 +306,7 @@
         <div class="clients__cta">
             <div class="container clients__cta-inner">
                 <span>Visit our CaseStudy section</span>
-                <a class="clients__cta-btn" href="/case-studies.php">Now</a>
+                <a class="clients__cta-btn" href="/case_study.php">Now</a>
             </div>
         </div>
     </section>

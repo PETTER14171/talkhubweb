@@ -754,7 +754,9 @@
   display: flex;
   align-items: center;
   gap: clamp(2.5rem, 5vw, 4rem);
-  animation: clients-slide 28s linear infinite;
+  width: max-content;
+  animation: clients-slide 38s linear infinite;
+  will-change: transform;
 }
 
 .clients__carousel:hover .clients__track{
