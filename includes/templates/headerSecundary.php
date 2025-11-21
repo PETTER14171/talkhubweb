@@ -5,8 +5,8 @@
             <button class="nav-toggle" aria-label="Abrir menú" id="navToggle">☰</button>
             <nav class="menu" id="mainNav">
                 <a href="/index.php">Home</a>
-                <a href="/services.php">services</a>
-                <a href="/case_study.php">CaseStudy</a>
+                <a href="/services.php">Services</a>
+                <a href="/case_study.php">Case Study</a>
                 <a class="btn btn-primary" href="#contact">Contacto</a>
             </nav>
         </div>

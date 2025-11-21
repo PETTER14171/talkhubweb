@@ -1,6 +1,6 @@
 <?php
 $page_title = $page_title ?? 'Talk‑Hub — Soporte y Contact Center';
-$page_desc = $page_desc ?? 'Soluciones de soporte técnico y contact center.';
+$page_desc = $page_desc ?? 'Talk‑Hub — Soporte y Contact Center.';
 ?>
 
 <!doctype html>

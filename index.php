@@ -82,11 +82,11 @@
                     <img src="/build/img/img_about-3.webp" alt="Sales dashboard">
                 </figure>
 
-                <!-- Badge superpuesto -->
+                <!-- Badge superpuesto
                 <div class="xp-badge">
                     <div class="xp-badge__num">25<span>+</span></div>
                     <div class="xp-badge__txt">Years Experience</div>
-                </div>
+                </div> -->
             </div>
 
             <!-- Columna derecha: texto -->
@@ -114,7 +114,7 @@
 
                 <div class="loc__copy">
                     <p>We are a BPO and Contact Center company based in the United States with operations in Mexico.</p>
-                    <p>We have the capacity to manage small campaigns and grow up to 500 operator positions.</p>
+                    <p>We have the capacity to manage small campaigns and grow up to 300 operator positions.</p>
                     <p>We offer bilingual services for businesses in the U.S. and Latin America providing scalable solutions tailored to each market’s needs.</p>
                 </div>
             </div>

@@ -43,7 +43,7 @@
                 <h2 class="">Services</h2>
                 <h1>Omni-channel customer support:</h1>
                 <p>
-                    Deliver seamless experiences across voice, chat, email, tickets, social media, and more — in both English and Spanish.
+                    Deliver seamless experiences across voice, chat, email, tickets, social media, and more, in both English and Spanish.
                     TalkHub bilingual support teams are trained to meet your customers where they are, ensuring satisfaction and loyalty.
                 </p>
                 <!-- …botón/CTA si lo necesitas -->
@@ -56,7 +56,7 @@
     <section class="performance pad" style="--bg:url('/build/img/perf-bg.webp')">
         <div class="container performance__grid">
             <div class="performance__copy">
-                <h2>Performance that sets us apart</h2>
+                <h2>Performance That Sets Us Apart</h2>
                 <ul class="performance__bullets">
                     <li><strong>Less than 0.99% Abandon Rate</strong> Every customer gets the help they need, the first time.</li>
                     <li><strong>Single-Digit Attrition</strong> Stable teams drive performance, consistency, and long-term knowledge retention.</li>
@@ -74,7 +74,7 @@
     <section class="kpi pad">
         <div class="container kpi__grid">
             <div class="kpi__copy Colum_left">
-                <h2>High Productivity, 98% + Accuracy</h2>
+                <h2>High Productivity + Accuracy</h2>
                 <p>Your business processes are the lifeblood of your operations. We ensure
                     efficiency and precision — especially in document processing workflows.</p>
 

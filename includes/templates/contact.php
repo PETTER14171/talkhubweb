@@ -8,20 +8,27 @@
 
                 <div class="grid-2">
                     <label>
-                        <span>Nombre</span>
+                        <span>Name</span>
                         <input type="text" name="nombre" required>
                     </label>
                     <label>
-                        <span>Correo</span>
+                        <span>Email</span>
                         <input type="email" name="correo" required>
                     </label>
                 </div>
+                <div class="grid-2">
+                    <label>
+                        <span>Subject</span>  <!-- Agregar un lista desplegable -->
+                        <input type="text" name="asunto" required>
+                    </label>
+                    <label>
+                        <span>Phone</span>
+                        <input type="phone" name="phone" required>
+                    </label>
+                </div>
+
                 <label>
-                    <span>Asunto</span>
-                    <input type="text" name="asunto" required>
-                </label>
-                <label>
-                    <span>Mensaje</span>
+                    <span>Message</span>
                     <textarea name="mensaje" rows="5" required></textarea>
                 </label>
 

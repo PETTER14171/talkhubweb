@@ -40,7 +40,7 @@
 
     <section class="pill-strip">
         <div class="container">
-            <p class="pill_all_txt">A U.S.-based DME supplier serving one of the country’s largest 65+ populations, providing critical products and support to aging adults across the southern region.</p>
+            <p class="pill_all_txt">A U.S.-based DME supplier serving third largest population state, providing critical products and support to aging adults across the southern region.</p>
         </div>
     </section>
 
@@ -49,7 +49,7 @@
 
             <!-- Tarjeta 1 -->
             <article class="case-metrics__card Colum_left">
-                <h3 class="case-metrics__title">Over 2 years of support</h3>
+                <h3 class="case-metrics__title">Over 2 Years Of Support</h3>
                 <p class="case-metrics__text">
                     Providing inbound contact center services in English and Spanish —
                     handling inquiries from patients, doctors, medical staff, hospitals,
@@ -60,7 +60,7 @@
 
             <!-- Tarjeta 2 -->
             <article class="case-metrics__card Colum_right">
-                <h3 class="case-metrics__title">Over 2 years of collaboration</h3>
+                <h3 class="case-metrics__title">Over 2 Years Of Collaboration</h3>
                 <p class="case-metrics__text">
                     Performing document verification, validation, and work order creation
                     based on patient eligibility.
