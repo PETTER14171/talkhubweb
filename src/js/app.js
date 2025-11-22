@@ -244,3 +244,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   elements.forEach(el => observer.observe(el));
 });
+
+
+////////////////////////////////////////////////////
+////////////////Funcion de formulario///////////////
+////////////////////////////////////////////////////
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".form");
+    const checkbox = form.querySelector('input[type="checkbox"]');
+
+    form.addEventListener("submit", function (e) {
+        if (!checkbox.checked) {
+            e.preventDefault(); // detiene envío del formulario
+
+            Swal.fire({
+                title: "Required",
+                text: "You must accept the privacy policy to submit the form.",
+                icon: "warning",
+                confirmButtonText: "Understood"
+            });
+        }
+    });
+});

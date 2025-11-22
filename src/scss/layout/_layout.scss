@@ -698,18 +698,28 @@
 .form label span{ color: rgba(255,255,255,.9); }
 
 .form input,
-.form textarea{
+.form textarea,
+.form select{
   background: rgba(255,255,255,.85);
   border: 1px solid rgba(255,255,255,.35);
 }
 
 .form input::placeholder,
-.form textarea::placeholder{ color: #7a8aa1; }
+.form textarea::placeholder,
+.form select::placeholder{ color: #7a8aa1; }
 
 .form input:focus,
-.form textarea:focus{
+.form textarea:focus,
+.form select:focus{
   box-shadow: 0 0 0 6px rgba(17,91,240,.18);
   border-color: rgba(17,91,240,1);
+}
+
+.form select{
+  border-radius: 6px;
+  background-color: var.$white;
+  height: 4.5vh;
+  
 }
 
 /* grid de los 2 primeros campos */
@@ -737,3 +747,4 @@
 .contact__form > *:not(.contact__legal):not(.contact__submit){
   filter: drop-shadow(0 6px 16px rgba(0,0,0,.08));
 }
+

@@ -5,6 +5,7 @@ if($_SERVER['REQUEST_METHOD'] !== 'POST'){ http_response_code(405); exit('Métod
 
 $nombre = sanitize($_POST['nombre'] ?? '');
 $correo = sanitize($_POST['correo'] ?? '');
+$phone = sanitize($_POST['phone'] ?? '');
 $asunto = sanitize($_POST['asunto'] ?? '');
 $mensaje = sanitize($_POST['mensaje'] ?? '');
 
@@ -16,7 +17,7 @@ http_response_code(422); exit('Datos inválidos');
 
 $to = ['victor.delafuente@talk-hub.com','soporte@talk-hub.com','auxiliarti@talk-hub.com'];
 $subject = "[Web] $asunto";
-$body = "Nombre: $nombre\nCorreo: $correo\n\nMensaje:\n$mensaje\n";
+$body = "Nombre: $nombre\nCorreo: $correo\nPhone: $phone\n\nMensaje:\n$mensaje\n";
 $headers = [];
 $headers[] = 'From: Notificador <contacto@kryptodevstudio.com>';
 $headers[] = 'Reply-To: '.$correo;

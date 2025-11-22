@@ -6,37 +6,39 @@
             <form class="form" action="/mail/send.php" method="POST" novalidate>
                 <input type="hidden" name="redirect_to" value="<?= htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES) ?>">
 
+                <label>
+                    <span>Name</span>
+                    <input type="text" name="nombre" required>
+                </label>
                 <div class="grid-2">
-                    <label>
-                        <span>Name</span>
-                        <input type="text" name="nombre" required>
-                    </label>
                     <label>
                         <span>Email</span>
                         <input type="email" name="correo" required>
                     </label>
-                </div>
-                <div class="grid-2">
-                    <label>
-                        <span>Subject</span>  <!-- Agregar un lista desplegable -->
-                        <input type="text" name="asunto" required>
-                    </label>
                     <label>
                         <span>Phone</span>
-                        <input type="phone" name="phone" required>
+                        <input type="phone" name="phone">
                     </label>
                 </div>
-
+                <label>
+                    <span>Subject</span>  <!-- Agregar un lista desplegable -->
+                    <select name="asunto" id="asunto" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="sales">Sales</option>
+                        <option value="human-resources">Human Resources</option>
+                        <option value="recruitment">Recruitment</option>
+                        <option value="vendors">Vendors</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
                 <label>
                     <span>Message</span>
                     <textarea name="mensaje" rows="5" required></textarea>
                 </label>
-
                 <label class="contact__legal">
                     <input type="checkbox" required>
                     <span>I accept the <a href="/privacy.php" target="_blank" rel="noopener">privacy policy</a> and agree to receive information.</span>
                 </label>
-
                 <button class="btn btn-primary contact__submit" type="submit">Submit</button>
             </form>
         </div>
