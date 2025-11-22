@@ -15,10 +15,14 @@
 
 
 <?php 
-    $page_title = 'Nosotros — Talk‑Hub';
-    $page_desc = 'Conoce nuestro equipo y metodología.';
+
     require 'includes/funciones.php';
-    incluirTemplate('head');
+
+    incluirTemplate('head', [
+        'page_title' => 'Case Study',
+        'page_desc'  => 'Conoce nuestro equipo y metodología.'
+    ]);
+
     incluirTemplate('header');
 ?>
 

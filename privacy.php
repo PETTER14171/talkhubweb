@@ -14,11 +14,15 @@
 <?php endif; ?>
 
 <?php 
-    $page_title = 'Nosotros — Talk‑Hub';
-    $page_desc = 'Conoce nuestro equipo y metodología.';
+
     require 'includes/funciones.php';
-    incluirTemplate('head');
-    incluirTemplate('headerSecundary');
+
+    incluirTemplate('head', [
+        'page_title' => 'Privacy',
+        'page_desc'  => 'Conoce nuestro equipo y metodología.'
+    ]);
+
+    incluirTemplate('headerSecondary');
 ?>
 
 <main>
