@@ -10,6 +10,7 @@ $page_desc = $page_desc ?? 'Talk‑Hub — Support & Contact Center.';
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title><?= htmlspecialchars($page_title) ?></title>
     <meta name="description" content="<?= htmlspecialchars($page_desc) ?>" />
+    <link rel="shortcut icon" href="../../build/img/icon.webp">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
