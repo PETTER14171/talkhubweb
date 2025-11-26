@@ -1,0 +1,95 @@
+@use '../base/variables' as var;
+@use '../base/mixins' as mix;
+@use 'sass:color';
+
+
+.contact{
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(1200px 600px at 25% -10%, rgba(255,255,255,.06), rgba(255,255,255,0) 60%),
+    radial-gradient(900px 500px at 80% 30%, rgba(255,255,255,.05), rgba(255,255,255,0) 60%),
+    linear-gradient(90deg,#0b3e74,#052b52);
+}
+
+.contact__title{
+  color: var.$white;
+  font-weight: var.$bold;
+  font-size: clamp(1.6rem, 3.4vw, 2.4rem);
+  margin: 0 0 1rem;
+}
+
+.form{ 
+    display:grid; 
+    gap:1rem; 
+    max-width: 560px;
+    margin-inline: auto;
+    color: var.$white;
+}
+
+.form label{ 
+    display:grid; 
+    gap:.35rem; 
+}
+
+.form input, .form textarea{
+    border:1px solid var.$border; 
+    border-radius:12px; 
+    padding: .85rem 1rem; font: inherit;
+    outline: none; 
+    transition: .15s; 
+    background:var.$white;
+}
+
+/* inputs estilo tarjeta clara como en la imagen */
+.form label span{ color: rgba(255,255,255,.9); }
+
+.form input,
+.form textarea,
+.form select{
+  background: var.$white;
+  border: 1px solid rgba(255,255,255,.35);
+}
+
+.form input::placeholder,
+.form textarea::placeholder,
+.form select::placeholder{ color: #7a8aa1; }
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus{
+  box-shadow: 0 0 0 6px rgba(17,91,240,.18);
+  border-color: rgba(17,91,240,1);
+}
+
+.form select{
+  border-radius: 6px;
+  background-color: var.$white;
+  min-height: 4.5vh;
+}
+
+/* grid de los 2 primeros campos */
+.grid-2{ display:grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media (max-width: 768px){
+  .grid-2{ grid-template-columns: 1fr; }
+}
+
+/* checkbox legal y botón centrados */
+.contact__legal{
+  display:flex; align-items:center; gap:.5rem;
+  font-size:.95rem; color:#e7eef9;
+  justify-content: center;
+}
+.contact__legal a{ color:#cfe2ff; text-decoration:underline; text-align: justify;}
+
+.contact__submit{
+  display:block;
+  margin: .75rem auto 0;
+  padding-inline: 2.5rem;
+  cursor: pointer;
+}
+
+/* opcional: sombra sutil al bloque de campos para levantarlo del fondo */
+.contact__form > *:not(.contact__legal):not(.contact__submit){
+  filter: drop-shadow(0 6px 16px rgba(0,0,0,.08));
+}
