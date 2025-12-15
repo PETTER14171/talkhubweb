@@ -125,15 +125,8 @@
     color: var.$white;
 }
 
+
 @media (max-width: 900px) {
-
-  .brand {
-    max-width: 100%;
-  }
-
-  .brand img {
-    max-width: 140px; // más razonable en móvil
-  }
 
   .nav-toggle {
     display: block;
@@ -142,32 +135,45 @@
     padding: .4rem .6rem;
     border-radius: 8px;
     cursor: pointer;
+    z-index: 60; // asegura que el botón siempre quede arriba
   }
 
-  .menu {
+  .menu{
     position: fixed;
-    inset: 72px 0 auto 0;   // debajo del header
-    background: #ffffff;
+    left: 0; right: 0;
+    top: 72px;               // debajo del header
+    background: #fff;
     padding: 1rem 1.25rem 1.5rem;
     border-bottom: 1px solid var.$border;
-    transform: translateY(-120%);
-    transition: transform .25s ease;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    z-index: 40; // por encima del resto
+    gap: .25rem;
+    z-index: 55;
+
+    /* cerrado */
+    transform: translateY(-16px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: transform .25s ease, opacity .2s ease, visibility .2s ease;
   }
 
-  .menu.open {
+  .menu.open{
     transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   /* En móvil, texto oscuro sobre fondo blanco */
-  .menu a:not(.btn) {
+  .menu a:not(.btn){
     color: #111827;
     width: 100%;
   }
 
-  .menu .btn {
+  .menu .btn{
     align-self: stretch;
     text-align: center;
   }
